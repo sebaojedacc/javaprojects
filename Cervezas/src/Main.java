@@ -48,21 +48,21 @@ public class Main {
             System.out.println ("4- Salir");
             System.out.println ("Digite una opción del menu: ");
             opcion = entrada.nextInt ();
+            entrada.nextLine ();
 
             switch(opcion){
                 case 1:
                     System.out.print ("\nIngrese el nombre de la chela: ");
                     nombre = entrada.nextLine ();
-                    entrada.nextLine ();
                     System.out.print("Ingrese la marca: ");
                     marca = entrada.nextLine ();
                     System.out.print ("Ingrese el tipo de chela (Lager,Dark,Ambar): ");
                     tipo = entrada.nextLine ();
                     System.out.print ("Ingrese los grados de alcohol:  ");
                     grados = entrada.nextFloat ();
+                    entrada.nextLine ();
                     System.out.print ("Ingrese el pais de origen: ");
                     pais = entrada.nextLine ();
-                    entrada.nextLine ();
 
                     cervezas [contadorCervezas] = new Cervezas (nombre,marca,tipo,grados,pais);
                     contadorCervezas++;
